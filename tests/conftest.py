@@ -5,8 +5,8 @@ from pyspark import SparkConf, SparkContext
 from pyspark.sql import SQLContext
 
 def configure_loggers():
-    logging.getLogger('py4j').setLevel(logging.DEBUG)
-    logging.getLogger('pyspark').setLevel(logging.DEBUG)
+    logging.getLogger('py4j').setLevel(logging.INFO)
+    logging.getLogger('pyspark').setLevel(logging.INFO)
 
 
 @pytest.fixture(scope='session')

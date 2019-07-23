@@ -1,2 +1,8 @@
 pyspark
 pytest
+
+# as well as pyspark test some common package imports
+pandas
+matplotlib
+boto3
+sklearn

@@ -1,5 +1,10 @@
 import pytest
 
+# test common imports
+import pandas as pd
+import matplotlib.pyplot as plt
+import sklearn.metrics
+
 from pyspark.sql import DataFrame
 
 
@@ -22,3 +27,9 @@ def test_pyspark(spark):
     df.show()
     assert to_array(df) == [list(row) for row in data]
 
+
+def test_pandas():
+    data = {'col_a': [1, 2, 3]}
+    df = pd.DataFrame(data)
+    actual = list(df.col_a)
+    assert actual == data['col_a']
