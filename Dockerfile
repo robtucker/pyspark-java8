@@ -1,4 +1,5 @@
 FROM openjdk:8u212-b04-jdk-stretch
+FROM openjdk:8
 
 ENV PYTHON_VERSION=3.7.3
 
